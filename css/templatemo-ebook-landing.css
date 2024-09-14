@@ -592,6 +592,16 @@ strong {
         height: calc(90vh - 88px);
         padding-top: 350px;
     }
+
+    .hero-image {
+        width: 50%!important;
+        position: relative;
+        z-index: 2;
+        bottom: 60px;
+        right: -300px;
+        display: block;
+        margin: auto;
+    }
 }
 
 
