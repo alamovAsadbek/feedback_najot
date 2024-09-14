@@ -582,7 +582,7 @@ strong {
     position: relative;
     z-index: 2;
     bottom: 60px;
-    right: -150px;
+    right: -100px;
     display: block;
     margin: auto;
 }
@@ -591,15 +591,6 @@ strong {
     .hero-section {
         height: calc(90vh - 88px);
         padding-top: 350px;
-    }
-
-    .hero-image {
-        position: relative;
-        z-index: 2;
-        bottom: 60px;
-        right: -300px;
-        display: block;
-        margin: auto;
     }
 }
 
