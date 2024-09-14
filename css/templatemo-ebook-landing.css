@@ -582,7 +582,7 @@ strong {
     position: relative;
     z-index: 2;
     bottom: 100px;
-    right: -80px;
+    right: -100px;
     display: block;
     margin: auto;
 }
