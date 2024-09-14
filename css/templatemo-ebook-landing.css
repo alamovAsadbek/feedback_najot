@@ -929,6 +929,11 @@ strong {
     border-color: transparent;
 }
 
+.style-textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 2px;
+}
 
 /*---------------------------------------
   SOCIAL ICON               
