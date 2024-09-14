@@ -548,7 +548,7 @@ strong {
     background-position: center;
     position: relative;
     padding-top: 50px;
-    padding: 35px;
+    padding-bottom: 35px;
 }
 
 .hero-section::after {
