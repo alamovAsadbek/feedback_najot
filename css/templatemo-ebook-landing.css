@@ -576,9 +576,11 @@ strong {
     margin: auto;
 }
 
-.hero_animation{
-
+.hero_animation {
+    width: 550px;
+    height: 300px;
 }
+
 @media screen and (min-width: 991px) {
     .hero-section {
         height: calc(90vh - 88px);
