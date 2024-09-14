@@ -589,7 +589,11 @@ strong {
         height: calc(90vh - 88px);
         padding-top: 350px;
     }
-    
+
+    .hero_animation {
+        width: 250px;
+        height: 150px;
+    }
 }
 
 
