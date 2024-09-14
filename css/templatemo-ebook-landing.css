@@ -460,7 +460,7 @@ strong {
     color: var(--white-color);
     font-size: var(--menu-font-size);
     font-weight: var(--font-weight-semibold);
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     position: relative;
     padding-top: 15px;
     padding-bottom: 15px;
