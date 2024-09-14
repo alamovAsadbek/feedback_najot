@@ -582,7 +582,7 @@ strong {
     position: relative;
     z-index: 2;
     bottom: 60px;
-    right: -100px;
+    right: -150px;
     display: block;
     margin: auto;
 }
@@ -594,7 +594,6 @@ strong {
     }
 
     .hero-image {
-        width: 50%!important;
         position: relative;
         z-index: 2;
         bottom: 60px;
