@@ -589,11 +589,17 @@ strong {
         height: calc(90vh - 88px);
         padding-top: 350px;
     }
+}
 
+@media screen and (max-width: 990px) {
     .hero_animation {
-        width: 250px;
-        height: 150px;
+        width: 550px;
+        height: 300px;
+        position: absolute;
+        right: 15px;
+        bottom: -25px;
     }
+
 }
 
 
