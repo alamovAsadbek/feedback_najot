@@ -880,13 +880,13 @@ strong {
     outline: none;
 }
 
-.custom-form .form-control:focus,
-.custom-form .form-control:hover {
+.custom-form .style-textarea .form-control:focus,
+.custom-form .style-textarea .form-control:hover {
     border-color: var(--primary-color);
 }
 
-.custom-form .form-control:focus + .input-group-text .custom-form-icon,
-.custom-form .form-control:hover + .input-group-text .custom-form-icon {
+.custom-form .style-textarea .form-control:focus + .input-group-text .custom-form-icon,
+.custom-form .style-textarea .form-control:hover + .input-group-text .custom-form-icon {
     opacity: 1;
 }
 
