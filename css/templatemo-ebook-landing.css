@@ -724,7 +724,7 @@ strong {
 
 .scrollspy-example-item {
     border-bottom: 5px dotted var(--p-color);
-    min-height: 500px;
+    min-height: auto;
     padding-top: 20px;
     padding-bottom: 50px;
 }
