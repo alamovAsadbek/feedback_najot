@@ -600,6 +600,9 @@ strong {
         bottom: -25px;
     }
 
+    .hero-section {
+        padding: 220px 0;
+    }
 }
 
 
