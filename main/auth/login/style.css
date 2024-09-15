@@ -11,6 +11,11 @@
     display: flex;
 }
 
+.main-logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo-style {
     width: 50px;
 }
