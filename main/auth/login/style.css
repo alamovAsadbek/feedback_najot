@@ -20,6 +20,10 @@
     width: 50px;
 }
 
+.login-form {
+    position: absolute;
+    right: 25px;
+}
 
 @media screen and (max-width: 780px) {
     .main-div {
