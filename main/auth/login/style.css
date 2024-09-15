@@ -35,9 +35,8 @@
 
 @media screen and (max-width: 780px) {
     .main-div {
-        width: 80%;
+        width: 80% !important;
         height: auto;
-        position: absolute;
         left: 10%;
     }
 
