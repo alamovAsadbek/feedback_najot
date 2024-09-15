@@ -45,3 +45,13 @@
         right: 5%;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .login-animation {
+        display: none;
+    }
+
+    .login-form {
+        width: 90%;
+    }
+}
