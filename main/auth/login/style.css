@@ -1,14 +1,13 @@
 .main-div {
     width: 60%;
-    height: 60%;
-    padding: 15px;
+    height: auto;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 8px;
     margin: auto;
     position: absolute;
     top: 20%;
     right: 20%;
-
+    padding: 25px 30px;
 }
 
 .main-logo {
