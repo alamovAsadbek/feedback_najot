@@ -9,3 +9,12 @@
     top: 20%;
     right: 25%;
 }
+
+@media screen and (max-width: 780px) {
+    .main-div {
+        width: 80%;
+        position: absolute;
+        left: 10%;
+    }
+
+}
