@@ -11,6 +11,10 @@
     display: flex;
 }
 
+.logo-style {
+    width: 50px;
+}
+
 @media screen and (max-width: 780px) {
     .main-div {
         width: 80%;
