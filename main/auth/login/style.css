@@ -8,7 +8,6 @@
     position: absolute;
     top: 20%;
     right: 10%;
-    display: flex;
 }
 
 .main-logo {
@@ -23,6 +22,10 @@
 .login-form {
     position: absolute;
     right: 25px;
+}
+
+.form-items {
+    display: flex;
 }
 
 @media screen and (max-width: 780px) {
