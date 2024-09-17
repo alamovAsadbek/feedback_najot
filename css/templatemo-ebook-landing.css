@@ -791,8 +791,8 @@ strong {
 .author-section {
     background-image: url('../images/circle-scatter-haikei.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left bottom;
+    background-size: 100%;
+    background-position: bottom;
     position: relative;
     margin-top: 50px;
 }
