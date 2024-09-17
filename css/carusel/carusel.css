@@ -20,7 +20,6 @@
 .slider .slide {
     height: auto;
     width: var(--slideWidth);
-    filter: grayscale(100);
     overflow: hidden;
 }
 
