@@ -16,6 +16,7 @@
 }
 
 .slider .slide {
+    padding: 15px;
     height: 100%;
     width: var(--slideWidth);
     overflow: hidden;
