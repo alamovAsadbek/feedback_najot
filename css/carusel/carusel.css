@@ -1,10 +1,9 @@
 .slider {
     --totSlides: 7;
     --slideWidth: 800px;
-    --slideHeight: 200px;
+    --slideHeight: 100%;
     --animationSpeed: calc(2s * var(--totSlides));
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: auto;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -17,7 +16,7 @@
 }
 
 .slider .slide {
-    height: auto;
+    height: 100%;
     width: var(--slideWidth);
     overflow: hidden;
 }
