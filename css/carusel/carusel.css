@@ -1,7 +1,7 @@
 .slider {
-    --totSlides: 4;
-    --slideWidth: auto;
-    --slideHeight: 100px;
+    --totSlides: 7;
+    --slideWidth: 800px;
+    --slideHeight: 200px;
     --animationSpeed: calc(2s * var(--totSlides));
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
     height: auto;
@@ -20,6 +20,13 @@
     height: auto;
     width: var(--slideWidth);
     overflow: hidden;
+}
+
+.slider .slide .container {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 
