@@ -710,14 +710,14 @@ html {
   }
 }
 
-.follow-text {
+.developer {
   display: flex;
   align-items: center;
   transition: 0.3s;
 }
 
 .follow-me:hover {
-  .follow-text {
+  .developer {
     transform: translateY(100%);
   }
 

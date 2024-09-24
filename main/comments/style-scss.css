@@ -672,13 +672,13 @@ html {
   top: -100%;
 }
 
-.follow-text {
+.developer {
   display: flex;
   align-items: center;
   transition: 0.3s;
 }
 
-.follow-me:hover .follow-text {
+.follow-me:hover .developer {
   transform: translateY(100%);
 }
 .follow-me:hover svg {
