@@ -507,6 +507,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 15px;
 }
 .detail-area-header .msg-profile {
   margin-right: 0;
