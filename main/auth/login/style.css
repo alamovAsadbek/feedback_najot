@@ -1,11 +1,11 @@
 .main-div {
     width: 60%;
-    height: 64%;
+    height: auto;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 8px;
     margin: auto;
     position: absolute;
-    top: 18%;
+    top: 15%;
     right: 20%;
     padding: 25px 30px;
 }
@@ -51,7 +51,8 @@
 
 @media screen and (max-width: 900px) {
     .main-div {
-        height: 62%;
+        height: auto;
+        box-shadow: none;
     }
 
     .login-animation {
