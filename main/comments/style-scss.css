@@ -669,6 +669,7 @@ html {
   width: 16px;
   height: 16px;
   margin-right: 8px;
+  top: -100%;
 }
 
 .follow-text {
@@ -680,7 +681,7 @@ html {
 .follow-me:hover .follow-text {
   transform: translateY(100%);
 }
-.follow-me:hover .developer {
+.follow-me:hover svg {
   top: 0;
 }
 
@@ -689,7 +690,7 @@ html {
   color: var(--detail-font-color);
   font-weight: 600;
   left: 0;
-  top: -100%;
+  top: 0;
   display: flex;
   transition: 0.3s;
   padding: 0 20px;
