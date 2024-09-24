@@ -567,7 +567,7 @@ strong {
 .hero-section .row {
     position: relative;
     z-index: 22;
-    top: -50px;
+    top: -0px !important;
 }
 
 .hero-image {
