@@ -689,11 +689,8 @@ html {
 .follow-me {
   text-decoration: none;
   font-size: 14px;
-  //width: calc(100% + 60px);
-  //margin-left: -30px;
   display: flex;
   align-items: center;
-  //margin-top: auto;
   overflow: hidden;
   color: #9c9cab;
   padding: 0 20px;
@@ -703,6 +700,7 @@ html {
   justify-content: center;
   margin-top: 10px;
   width: 100%;
+  border-radius: 6px;
 
   svg {
     width: 16px;
