@@ -774,6 +774,9 @@ html {
 .back-btn i {
   margin-right: 10px;
 }
+.back-btn a {
+  color: #000 !important;
+}
 
 .back-btn:hover {
   color: #E76F51 !important;
