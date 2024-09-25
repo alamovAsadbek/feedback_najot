@@ -197,8 +197,10 @@ html {
     position: relative;
     top: 30%;
     right: -85px;
+    cursor: pointer;
 
     option {
+      cursor: pointer;
       font-weight: 800 !important;
     }
 
