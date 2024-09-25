@@ -192,11 +192,15 @@ html {
     background-size: 16px;
     background-position: 10emx 65%;
     font-family: var(--body-font);
-    font-weight: 600;
+    font-weight: 800;
     font-size: 15px;
     position: relative;
     top: 30%;
     right: -85px;
+
+    option {
+      font-weight: 800 !important;
+    }
 
     &::placeholder {
       color: var(--input-chat-color);
