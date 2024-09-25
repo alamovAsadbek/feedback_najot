@@ -303,5 +303,8 @@ a, a:hover {
     background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
   }
 }
+.navbar {
+  background-color: rgba(0, 0, 0, 0.65) !important;
+}
 
 /*# sourceMappingURL=style.css.map */
