@@ -45,7 +45,11 @@ body {
   line-height: 1.2;
 }
 .postcard .small {
-  font-size: 80%;
+  font-size: 12px;
+}
+.postcard .small time i {
+  margin: 0 10px;
+  font-size: 15px;
 }
 .postcard .postcard__title {
   font-size: 1.75rem !important;
