@@ -6,6 +6,7 @@ body {
   color: #ffffff;
   text-rendering: optimizeLegibility;
   font-weight: initial;
+  text-align: center;
 }
 
 .dark {
