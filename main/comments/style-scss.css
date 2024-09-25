@@ -190,7 +190,7 @@ html {
   color: var(--body-color);
   background-repeat: no-repeat;
   background-size: 16px;
-  background-position: 25px 48%;
+  background-position: 0 48%;
   font-family: var(--body-font);
   font-weight: 600;
   font-size: 15px;
