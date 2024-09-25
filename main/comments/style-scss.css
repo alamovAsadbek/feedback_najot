@@ -530,24 +530,6 @@ html {
   margin-left: 8px;
 }
 
-.detail-changes {
-  margin-top: -10px;
-}
-
-.detail-change {
-  color: var(--detail-font-color);
-  font-family: var(--body-font);
-  font-weight: 600;
-  font-size: 14px;
-  border-bottom: 1px solid var(--border-color);
-  padding: 14px 0;
-  display: flex;
-}
-.detail-change svg {
-  width: 16px;
-  margin-left: auto;
-}
-
 .detail-owner {
   color: var(--detail-font-color);
   font-family: var(--body-font);
@@ -556,6 +538,7 @@ html {
   border-bottom: 1px solid var(--border-color);
   padding: 14px 0;
   display: flex;
+  margin: 0;
 }
 .detail-owner svg {
   width: 16px;
