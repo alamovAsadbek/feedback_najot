@@ -93,26 +93,24 @@ body {
   .postcard__tagbox {
     display: flex;
     flex-flow: row wrap;
-    font-size: 14px;
+    font-size: 12px;
     margin: 20px 0 0 0;
     padding: 0;
-    justify-content: center;
+    justify-content: end !important;
+    text-align: end;
 
     .tag__item {
       display: inline-block;
       border-radius: 3px;
+      font-size: 12px;
       padding: 2.5px 10px;
-      margin: 0 5px 5px 0;
+      margin: 0 5px;
       cursor: default;
       user-select: none;
       transition: background-color 0.3s;
 
       i {
         margin-right: 10px;
-      }
-
-      &:hover {
-        color: #E76F51;
       }
     }
   }
