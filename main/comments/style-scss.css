@@ -176,14 +176,14 @@ html {
 
 .select-bar {
   height: 80px;
-  width: 15em !important;
+  width: 8em !important;
   z-index: 3;
   position: relative;
   right: 25px;
 }
 .select-bar select {
   height: 40%;
-  width: 15em;
+  width: 8em;
   display: block;
   background-color: transparent;
   border: none;
