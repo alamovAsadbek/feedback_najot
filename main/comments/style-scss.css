@@ -767,10 +767,15 @@ html {
 }
 
 .back-btn {
-  width: 15em !important;
+  width: 12em !important;
 }
 .back-btn i {
   margin-right: 10px;
+}
+
+.back-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  transition: background-color 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=style-scss.css.map */
