@@ -770,6 +770,10 @@ html {
   width: 12em !important;
   border: none !important;
   box-shadow: none !important;
+  position: relative;
+  top: 0;
+  left: -45px;
+  z-index: 1;
 }
 .back-btn i {
   margin-right: 10px;
