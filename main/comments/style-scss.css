@@ -609,28 +609,6 @@ html {
   margin-right: 8px;
 }
 
-.detail-photo-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 6px;
-  grid-row-gap: 6px;
-  grid-template-rows: repeat(3, 60px);
-}
-.detail-photo-grid img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  object-position: center;
-}
-
-.view-more {
-  color: var(--theme-color);
-  font-weight: 600;
-  font-size: 15px;
-  margin: 25px 0;
-}
-
 .follow-me {
   text-decoration: none;
   font-size: 14px;
