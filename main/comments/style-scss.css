@@ -532,9 +532,14 @@ html {
 
 .detail-create-date {
   display: flex;
+  position: relative;
 }
 .detail-create-date p.title-date {
   margin-right: 5px;
+  color: var(--detail-font-color);
+}
+.detail-create-date p.date-created {
+  text-align: end;
 }
 .detail-create-date p {
   font-size: 12px;
