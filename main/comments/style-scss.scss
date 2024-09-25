@@ -777,7 +777,7 @@ html {
   box-shadow: none !important;
   position: relative;
   top: 0;
-  left: -50px;
+  left: -75px;
   z-index: 1;
 
   i {
@@ -786,7 +786,9 @@ html {
 
   a {
     color: #000 !important;
+    font-weight: 800 !important;
   }
+
 }
 
 .back-btn:hover {
