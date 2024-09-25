@@ -762,5 +762,8 @@ html {
     padding-right: 10px;
   }
 }
+.navbar {
+  background-color: rgba(0, 0, 0, 0.65) !important;
+}
 
 /*# sourceMappingURL=style-scss.css.map */
