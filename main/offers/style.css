@@ -48,7 +48,7 @@ body {
   font-size: 80%;
 }
 .postcard .postcard__title {
-  font-size: 1.75rem;
+  font-size: 1.75rem !important;
 }
 .postcard .postcard__bar {
   width: 50px;
