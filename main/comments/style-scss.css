@@ -766,4 +766,11 @@ html {
   background-color: rgba(0, 0, 0, 0.65) !important;
 }
 
+.back-btn {
+  width: 15em !important;
+}
+.back-btn i {
+  margin-right: 10px;
+}
+
 /*# sourceMappingURL=style-scss.css.map */
