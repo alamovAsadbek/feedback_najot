@@ -821,6 +821,7 @@ html {
 //back-btn
 .back-btn {
   width: 12em !important;
+  border: none !important;
 
   i {
     margin-right: 10px;
@@ -828,6 +829,6 @@ html {
 }
 
 .back-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  transition: background-color 0.3s ease-in-out;
+  color: #E76F51 !important;
+  transition: color 0.3s ease-in-out;
 }
