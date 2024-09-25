@@ -267,8 +267,8 @@ html {
   align-items: center;
   background-color: var(--border-color);
 }
-.msg-profile.group svg {
-  width: 60%;
+.msg-profile.group img {
+  border-radius: 50%;
 }
 
 .msg {
