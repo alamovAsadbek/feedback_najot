@@ -37,7 +37,7 @@ body {
   color: #18151f;
 }
 .postcard a {
-  color: inherit;
+  color: inherit !important;
 }
 .postcard h1, .postcard .h1 {
   margin-bottom: 0.5rem;
