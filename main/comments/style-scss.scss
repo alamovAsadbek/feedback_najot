@@ -176,21 +176,21 @@ html {
 
 .select-bar {
   height: 80px;
+  width: 15em !important;
   z-index: 3;
   position: relative;
-  margin-left: 250px;
-  margin-right: 20px;
+  right: 25px;
 
   select {
     height: 40%;
-    width: 100%;
+    width: 15em;
     display: block;
     background-color: transparent;
     border: none;
     color: var(--body-color);
     background-repeat: no-repeat;
     background-size: 16px;
-    background-position: 0 48%;
+    background-position: 0 65% 15px 0;
     font-family: var(--body-font);
     font-weight: 600;
     font-size: 15px;
