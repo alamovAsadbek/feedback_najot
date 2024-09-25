@@ -530,6 +530,16 @@ html {
   margin-left: 8px;
 }
 
+.detail-create-date {
+  display: flex;
+}
+.detail-create-date p.title-date {
+  margin-right: 5px;
+}
+.detail-create-date p {
+  font-size: 12px;
+}
+
 .detail-owner {
   color: var(--detail-font-color);
   font-family: var(--body-font);

@@ -557,6 +557,18 @@ html {
   }
 }
 
+.detail-create-date {
+  display: flex;
+
+  p.title-date {
+    margin-right: 5px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
 .detail-owner {
   color: var(--detail-font-color);
   font-family: var(--body-font);
