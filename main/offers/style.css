@@ -91,7 +91,7 @@ body {
   margin-right: 10px;
 }
 .postcard .postcard__tagbox .tag__item:hover {
-  color: #000000;
+  color: #E76F51;
 }
 .postcard:hover .postcard__bar {
   width: 100px;
