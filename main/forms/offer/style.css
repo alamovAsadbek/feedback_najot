@@ -1,6 +1,6 @@
 .register {
     background: -webkit-linear-gradient(left, #3931af, #00c6ff);
-    width: 100vw;
+    width: 100vw !important;
     height: 100vh;
     /*margin-top: 3%;*/
     /*padding: 3%;*/
