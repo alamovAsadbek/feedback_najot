@@ -23,7 +23,11 @@
 
 .btn-group .btn {
     margin-right: 5px;
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    color: #333;
 }
+
 
 .active[type="button"] {
     background-color: #ED8936FF !important;
