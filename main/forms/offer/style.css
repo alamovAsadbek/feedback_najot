@@ -4,6 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
+    overflow: hidden; /* Prevent scrolling */
 }
 
 .container {
@@ -14,6 +15,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative; /* Position for the banner */
 }
 
 .left-panel {
@@ -33,7 +35,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .button-group {
@@ -45,23 +47,23 @@ body {
 .role-btn {
     padding: 10px 20px;
     border: none;
-    border-radius: 50px; /* Rounded button */
+    border-radius: 50px;
     cursor: pointer;
-    background-color: #007bff; /* Blue background */
+    background-color: #007bff;
     color: white;
-    font-weight: bold; /* Bold text */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .role-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 .role-btn.active {
-    background-color: white; /* White background for active button */
-    color: #007bff; /* Blue text for active button */
-    border: 2px solid #007bff; /* Blue border for active button */
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
 }
 
 form {
@@ -92,97 +94,48 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
+
+/* Responsive styles */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .left-panel, .right-panel {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .role-btn {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
 }
 
-.container {
-  display: flex;
-  width: 80%;
-  height: 500px;
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.left-panel {
-  background: linear-gradient(135deg, #1e3c72, #1e3c72, #2a5298);
-  color: white;
-  width: 40%;
-  padding-right: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.right-panel {
-  padding: 30px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Distribute space between elements */
-}
-
-.button-group {
-  display: flex;
-  justify-content: space-around; /* Evenly space buttons */
-  margin-bottom: 20px;
-}
-
-.role-btn {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 50px; /* Rounded button */
-  cursor: pointer;
-  background-color: #007bff; /* Blue background */
-  color: white;
-  font-weight: bold; /* Bold text */
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
-}
-
-.role-btn:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-.role-btn.active {
-  background-color: white; /* White background for active button */
-  color: #007bff; /* Blue text for active button */
-  border: 2px solid #007bff; /* Blue border for active button */
-}
-
-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Space out form elements */
-}
-
-input,
-select {
-  width: 48%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
+/* Blue Banner Styles */
+.blue-banner {
+    position: absolute;
+    top: 0; /* Positions the banner at the top */
+    left: 0;
+    width: 100%; /* Full width */
+    height: 60px; /* Height of the banner */
+    background-color: #007bff; /* Blue color */
+    color: white; /* Text color */
+    display: flex; /* Flexbox for centering text */
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+    font-size: 20px; /* Font size */
+    z-index: 1; /* Ensure it sits above other elements */
 }
