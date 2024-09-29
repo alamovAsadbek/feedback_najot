@@ -5,74 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dual Form</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<!--    <style>-->
-<!--        body {-->
-<!--            background-color: #f8f9fa;-->
-<!--        }-->
-<!--        .container {-->
-<!--            margin-top: 50px;-->
-<!--        }-->
-<!--        .form-container {-->
-<!--            border: 1px solid #ced4da;-->
-<!--            border-radius: 5px;-->
-<!--            padding: 20px;-->
-<!--            background-color: white;-->
-<!--            display: none; /* Dastlabki ko'rinishda forma yashirin */-->
-<!--        }-->
-<!--        .form-container.active {-->
-<!--            display: block; /* Faol forma ko'rsatish */-->
-<!--        }-->
-<!--    </style>-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="container">
+    <!-- Left panel for welcome message -->
     <div class="left-panel">
         <h1>Welcome</h1>
         <p>You are 30 seconds away from earning your own money!</p>
+        <!-- Login button -->
         <button>Login</button>
     </div>
+
+    <!-- Right panel for the registration form -->
     <div class="right-panel">
         <h2>Apply as an Employee</h2>
+
+        <!-- Button group for selecting role -->
+        <div class="button-group">
+            <button class="role-btn active">Employee</button> <!-- Active button for Employee -->
+            <button class="role-btn">Hirer</button>           <!-- Button for Hirer -->
+        </div>
+
+        <!-- Registration form -->
         <form>
-            <input type="text" placeholder="First Name *" />
-            <input type="text" placeholder="Your Email *" />
-            <input type="text" placeholder="Last Name *" />
-            <input type="text" placeholder="Your Phone *" />
-            <input type="password" placeholder="Password *" />
+            <input type="text" placeholder="First Name *"/>
+            <input type="text" placeholder="Your Email *"/>
+            <input type="text" placeholder="Last Name *"/>
+            <input type="text" placeholder="Your Phone *"/>
+            <input type="password" placeholder="Password *"/>
             <select>
                 <option>Please select your Security Question</option>
                 <!-- Add options here -->
             </select>
-            <input type="password" placeholder="Confirm Password *" />
-            <input type="text" placeholder="Enter Your Answer *" />
+            <input type="password" placeholder="Confirm Password *"/>
+            <input type="text" placeholder="Enter Your Answer *"/>
             <div>
-                <input type="radio" name="gender" value="male" /> Male
-                <input type="radio" name="gender" value="female" /> Female
+                <!-- Radio buttons for gender selection -->
+                <input type="radio" name="gender" value="male"/> Male
+                <input type="radio" name="gender" value="female"/> Female
             </div>
+            <!-- Register button -->
             <button type="submit">Register</button>
         </form>
     </div>
 </div>
-
-
-<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>-->
-<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
-<!--<script>-->
-<!--    $(document).ready(function() {-->
-<!--        $('#loginButton').click(function() {-->
-<!--            $('#loginForm').addClass('active');-->
-<!--            $('#registerForm').removeClass('active');-->
-<!--        });-->
-
-<!--        $('#registerButton').click(function() {-->
-<!--            $('#registerForm').addClass('active');-->
-<!--            $('#loginForm').removeClass('active');-->
-<!--        });-->
-<!--    });-->
-<!--</script>-->
 
 </body>
 </html>
