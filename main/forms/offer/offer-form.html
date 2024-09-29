@@ -1,69 +1,73 @@
-<!doctype html>
-<html lang="uz">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dual Form</title>
-    <!-- CSS FILES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="../../../css/bootstrap-icons.css" rel="stylesheet">
-
-    <link href="../../../css/templatemo-ebook-landing.css" rel="stylesheet">
-
-    <link rel="icon" href="../../../files/images/favicon.ico" type="image/x-icon">
-
+    <title>Apply as an Employee</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-    <!-- Left panel for welcome message -->
-    <div class="left-panel">
-        <h1>Welcome</h1>
-        <p>You are 30 seconds away from earning your own money!</p>
-    </div>
-
-    <!-- Right panel for the registration form -->
-    <div class="right-panel">
-        <h2>Apply as an Employee</h2>
-
-        <!-- Button group for selecting role -->
-        <div class="button-group">
-            <button class="role-btn active">Employee</button> <!-- Active button for Employee -->
-            <button class="role-btn">Hirer</button>           <!-- Button for Hirer -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Welcome, You are 30 seconds away from earning your own money!</h2>
+            <button class="btn btn-primary">Login</button>
         </div>
-
-        <!-- Registration form -->
-        <form>
-            <input type="text" placeholder="First Name *"/>
-            <input type="text" placeholder="Your Email *"/>
-            <input type="text" placeholder="Last Name *"/>
-            <input type="text" placeholder="Your Phone *"/>
-            <input type="password" placeholder="Password *"/>
-            <select>
-                <option>Please select your Security Question</option>
-                <!-- Add options here -->
-            </select>
-            <input type="password" placeholder="Confirm Password *"/>
-            <input type="text" placeholder="Enter Your Answer *"/>
-            <div>
-                <!-- Radio buttons for gender selection -->
-                <input type="radio" name="gender" value="male"/> Male
-                <input type="radio" name="gender" value="female"/> Female
-            </div>
-            <!-- Register button -->
-            <button type="submit">Register</button>
-        </form>
+        <div class="col-md-6">
+            <form>
+                <h2>Apply as an Employee</h2>
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="securityQuestion">Please select your Security Question</label>
+                    <select class="form-control" id="securityQuestion">
+                        <option>What is your mother's maiden name?</option>
+                        <option>What was the name of your first pet?</option>
+                        <option>What was the name of your elementary school?</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="securityAnswer">Enter Your Answer</label>
+                    <input type="text" class="form-control" id="securityAnswer" placeholder="Enter answer">
+                </div>
+                <div class="form-group">
+                    <label>Gender</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
     </div>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
