@@ -36,4 +36,6 @@ h4 {
 
 .animation-offer-form .animation-offer {
     margin: auto;
+    width: 50%;
+    height: auto;
 }
