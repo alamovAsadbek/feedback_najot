@@ -27,63 +27,51 @@
 <body>
 
 <div class="container">
-    <h3 class="text-center">Welcome</h3>
-    <div class="text-center mb-4">
-        <button id="loginButton" class="btn btn-primary">Sign In</button>
-        <button id="registerButton" class="btn btn-secondary">Sign Up</button>
+    <div class="left-panel">
+        <h1>Welcome</h1>
+        <p>You are 30 seconds away from earning your own money!</p>
+        <button>Login</button>
     </div>
-
-    <div id="loginForm" class="form-container active">
-        <h4 class="text-center">Login</h4>
+    <div class="right-panel">
+        <h2>Apply as an Employee</h2>
         <form>
-            <div class="form-group">
-                <label for="loginEmail">Email address</label>
-                <input type="email" class="form-control" id="loginEmail" placeholder="Enter email" required>
+            <input type="text" placeholder="First Name *" />
+            <input type="text" placeholder="Your Email *" />
+            <input type="text" placeholder="Last Name *" />
+            <input type="text" placeholder="Your Phone *" />
+            <input type="password" placeholder="Password *" />
+            <select>
+                <option>Please select your Security Question</option>
+                <!-- Add options here -->
+            </select>
+            <input type="password" placeholder="Confirm Password *" />
+            <input type="text" placeholder="Enter Your Answer *" />
+            <div>
+                <input type="radio" name="gender" value="male" /> Male
+                <input type="radio" name="gender" value="female" /> Female
             </div>
-            <div class="form-group">
-                <label for="loginPassword">Password</label>
-                <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Login</button>
-        </form>
-    </div>
-
-    <div id="registerForm" class="form-container">
-        <h4 class="text-center">Register</h4>
-        <form>
-            <div class="form-group">
-                <label for="registerName">Name</label>
-                <input type="text" class="form-control" id="registerName" placeholder="Enter your name" required>
-            </div>
-            <div class="form-group">
-                <label for="registerEmail">Email address</label>
-                <input type="email" class="form-control" id="registerEmail" placeholder="Enter email" required>
-            </div>
-            <div class="form-group">
-                <label for="registerPassword">Password</label>
-                <input type="password" class="form-control" id="registerPassword" placeholder="Password" required>
-            </div>
-            <button type="submit" class="btn btn-success btn-block">Register</button>
+            <button type="submit">Register</button>
         </form>
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $('#loginButton').click(function() {
-            $('#loginForm').addClass('active');
-            $('#registerForm').removeClass('active');
-        });
 
-        $('#registerButton').click(function() {
-            $('#registerForm').addClass('active');
-            $('#loginForm').removeClass('active');
-        });
-    });
-</script>
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>-->
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+<!--<script>-->
+<!--    $(document).ready(function() {-->
+<!--        $('#loginButton').click(function() {-->
+<!--            $('#loginForm').addClass('active');-->
+<!--            $('#registerForm').removeClass('active');-->
+<!--        });-->
+
+<!--        $('#registerButton').click(function() {-->
+<!--            $('#registerForm').addClass('active');-->
+<!--            $('#loginForm').removeClass('active');-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
 
 </body>
 </html>
