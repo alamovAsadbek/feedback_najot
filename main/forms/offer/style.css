@@ -92,3 +92,97 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel {
+  background: linear-gradient(135deg, #1e3c72, #1e3c72, #2a5298);
+  color: white;
+  width: 40%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.right-panel {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space between elements */
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around; /* Evenly space buttons */
+  margin-bottom: 20px;
+}
+
+.role-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px; /* Rounded button */
+  cursor: pointer;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.role-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.role-btn.active {
+  background-color: white; /* White background for active button */
+  color: #007bff; /* Blue text for active button */
+  border: 2px solid #007bff; /* Blue border for active button */
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space out form elements */
+}
+
+input,
+select {
+  width: 48%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
