@@ -733,6 +733,7 @@ html {
   left: -125px;
   z-index: 1;
   font-weight: 600 !important;
+  text-align: left;
 }
 .back-btn i {
   margin-right: 10px;
