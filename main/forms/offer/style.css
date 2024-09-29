@@ -102,7 +102,7 @@ body {
 
 .container {
   display: flex;
-  width: 800px;
+  width: 80%;
   height: 500px;
   background-color: white;
   border-radius: 10px;
