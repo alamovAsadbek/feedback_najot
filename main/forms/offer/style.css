@@ -43,3 +43,9 @@
     width: 50%;
     height: auto;
 }
+
+@media (max-width: 768px) {
+    .form-offer {
+        box-shadow: none;
+    }
+}
