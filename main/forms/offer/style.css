@@ -20,8 +20,8 @@
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #004085;
+    background-color: #ff7500;
+    border-color: #ff7500;
     transition: all 0.3s ease-in-out;
 }
 
