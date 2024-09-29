@@ -45,19 +45,23 @@ body {
 .role-btn {
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px; /* Rounded button */
     cursor: pointer;
-    background-color: #007bff;
+    background-color: #007bff; /* Blue background */
     color: white;
-    transition: background-color 0.3s;
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
 }
 
 .role-btn:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .role-btn.active {
-    background-color: #0056b3;
+    background-color: white; /* White background for active button */
+    color: #007bff; /* Blue text for active button */
+    border: 2px solid #007bff; /* Blue border for active button */
 }
 
 form {
