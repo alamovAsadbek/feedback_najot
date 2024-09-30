@@ -68,6 +68,21 @@
     transition: all 0.3s ease-in-out;
 }
 
+.back-home:active {
+    background: #ED8936FF;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgb(255, 117, 0);
+}
+
+.back-home:focus {
+    outline: none;
+    background: #ED8936FF;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgb(255, 117, 0);
+}
+
 @media (max-width: 768px) {
     .form-offer {
         box-shadow: none;
