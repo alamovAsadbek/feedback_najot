@@ -59,3 +59,9 @@
         top: 0;
     }
 }
+
+@media (max-width: 1024px) {
+    .form-offer {
+        width: 92%;
+    }
+}
