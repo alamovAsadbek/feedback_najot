@@ -53,11 +53,15 @@
     top: 25px;
 }
 
-.back-home{
+.back-home {
+    background: #ffffff;
+    color: #ED8936FF;
+    border: none;
     position: absolute;
     top: 0;
     right: 20px;
 }
+
 @media (max-width: 768px) {
     .form-offer {
         box-shadow: none;
