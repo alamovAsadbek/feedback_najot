@@ -96,13 +96,13 @@ path {
   border: none;
   background: none;
   font-size: 24px;
-  color: $main-yellow-rgb-015;
+  color: $main-yell-rgb-015 !important;
   cursor: pointer;
   transition: 0.5s;
 }
 
 .card button:hover {
-  color: #4caf50;
+  color: $main-yell-rgb-016;
   transform: rotate(22deg);
 }
 

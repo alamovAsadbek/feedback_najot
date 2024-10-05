@@ -83,13 +83,13 @@ path {
   border: none;
   background: none;
   font-size: 24px;
-  color: rgba(189, 187, 73, 0.1);
+  color: #ff7500 !important;
   cursor: pointer;
   transition: 0.5s;
 }
 
 .card button:hover {
-  color: #4caf50;
+  color: #e86e0c;
   transform: rotate(22deg);
 }
 
