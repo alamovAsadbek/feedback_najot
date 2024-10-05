@@ -121,7 +121,7 @@ path {
   cursor: pointer;
 }
 
-.page-info * {
+#page-info {
   color: gray;
 }
 
