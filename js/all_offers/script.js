@@ -21,7 +21,7 @@ function renderCards() {
             offerCards[i].style.display = 'block';
         }
     } else if (currentData === 'my-offers') {
-        for (let i = startIndex; i < endIndex && i < demandCards.length; i++) {
+        for (let i = startIndex; i < endIndex && i < myOfferCards.length; i++) {
             myOfferCards[i].style.display = 'block';
         }
     } else {
