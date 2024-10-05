@@ -114,6 +114,14 @@ path {
   text-align: end !important;
 }
 
+#pagination button {
+  background-color: #ff7500 !important;
+  border: none;
+  color: white !important;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0.65) !important;
 }
