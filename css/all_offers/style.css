@@ -4,10 +4,10 @@
 
 .btn-custom-secondary {
     background-color: white; /* Oq fon */
-    color: black; /* Matn rangi */
-    border: 1px solid #007bff; /* Bootstrap rangida chegarasi */
+    color: black;
+    border: 1px solid #007bff;
 }
 
 .btn-custom-secondary:hover {
-    background-color: #e0e0e0; /* O'ynash holati */
+    background-color: #e0e0e0;
 }
