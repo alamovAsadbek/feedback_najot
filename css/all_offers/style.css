@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card {
+    margin: 15px;
+}
+
+.btn-custom-secondary {
+    background-color: white; /* Oq fon */
+    color: black; /* Matn rangi */
+    border: 1px solid #007bff; /* Bootstrap rangida chegarasi */
+}
+
+.btn-custom-secondary:hover {
+    background-color: #e0e0e0; /* O'ynash holati */
+}
