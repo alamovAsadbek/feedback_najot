@@ -10,7 +10,7 @@ $main-blue: #0076bd !default;
 $main-blue-rgb-015: rgba(0, 118, 189, 0.1) !default;
 //$main-color: #ff7500 !default;
 $main-yell-rgb-015: #ff7500 !default;
-$main-yellow-rgb-016: #e86e0c !default;
+$main-yell-rgb-016: #e86e0c !default;
 /* card styles */
 
 .card {
@@ -96,7 +96,7 @@ path {
   border: none;
   background: none;
   font-size: 24px;
-  color: #8bc34a;
+  color: $main-yellow-rgb-015;
   cursor: pointer;
   transition: 0.5s;
 }

@@ -83,7 +83,7 @@ path {
   border: none;
   background: none;
   font-size: 24px;
-  color: #8bc34a;
+  color: rgba(189, 187, 73, 0.1);
   cursor: pointer;
   transition: 0.5s;
 }
