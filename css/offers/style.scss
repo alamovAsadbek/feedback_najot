@@ -44,8 +44,14 @@ $main-yell-rgb-016: #e86e0c !default;
 .card .actions {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  align-items: end;
   padding: 0.5rem 1rem;
+
+  button {
+    font-size: 16px;
+    padding: 0;
+    font-weight: bold;
+  }
 }
 
 .img-avatar {
