@@ -55,6 +55,13 @@ document.getElementById('show-demands').addEventListener('click', () => {
     updateButtonState('show-demands');
 });
 
+document.getElementById('show-my-offers').addEventListener('click', () => {
+    currentData = 'my-offers';
+    currentPage = 1;
+    renderCards();
+    updateButtonState('show-my-offers');
+});
+
 function updateButtonState(activeButtonId) {
     const buttons = document.querySelectorAll('#button-container button');
     buttons.forEach(button => {
