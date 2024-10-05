@@ -93,6 +93,10 @@ path {
   transform: rotate(22deg);
 }
 
+#button-container button {
+  font-size: 16px !important;
+}
+
 #button-container .active {
   background-color: #ff7500 !important;
   border: none;
