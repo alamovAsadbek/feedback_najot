@@ -59,10 +59,10 @@ function updateButtonState(activeButtonId) {
     const buttons = document.querySelectorAll('#button-container button');
     buttons.forEach(button => {
         if (button.id === activeButtonId) {
-            button.classList.add('btn-primary');
+            button.classList.add('active');
             button.classList.remove('btn-custom-secondary');
         } else {
-            button.classList.remove('btn-primary');
+            button.classList.remove('active');
             button.classList.add('btn-custom-secondary');
         }
     });
