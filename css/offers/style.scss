@@ -106,7 +106,7 @@ path {
   transform: rotate(22deg);
 }
 
-#button-container button {
+#button-container .active {
   background-color: $main-yell-rgb-015 !important;
   border: none;
   font-size: 18px;
