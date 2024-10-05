@@ -34,7 +34,7 @@ function renderCards() {
     document.getElementById('next').disabled = (currentData === 'offers' && endIndex >= offerCards.length) || (currentData === 'demands' && endIndex >= demandCards.length) || (currentData === 'my-offers' && endIndex >= demandCards.length);
 
     const pageInfo = document.getElementById('page-info');
-    pageInfo.textContent = `Sahifa: ${currentPage}, Ekranda: ${currentData === 'offers' ? offerCards.length : demandCards.length} ta karta`;
+    pageInfo.textContent = `Page: ${currentPage},  Displaying: ${currentData === 'offers' ? offerCards.length : demandCards.length}`;
 }
 
 document.getElementById('prev').addEventListener('click', () => {
