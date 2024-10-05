@@ -77,7 +77,7 @@ path {
     background-size: cover;
 }
 
-button {
+.card button {
     border: none;
     background: none;
     font-size: 24px;
