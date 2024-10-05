@@ -93,6 +93,11 @@ path {
   transform: rotate(22deg);
 }
 
+#button-container {
+  width: 100%;
+  text-align: end !important;
+}
+
 #button-container button {
   font-size: 16px !important;
 }
