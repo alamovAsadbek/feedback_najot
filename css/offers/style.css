@@ -35,13 +35,15 @@
   padding: 0.5rem 1rem;
 }
 .card .actions i {
+  width: max-content;
   font-size: 16px;
-  padding: 0;
   font-weight: bold;
   margin-left: 5px;
   transition: 0.5s;
   color: #ff7500 !important;
   cursor: pointer;
+  padding-left: 5px;
+  background-color: #000000;
 }
 .card .actions i:hover {
   color: #e86e0c;
