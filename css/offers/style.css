@@ -29,10 +29,13 @@
 }
 
 .card .actions {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 0.2fr);
-  align-items: end;
   padding: 0.5rem 1rem;
+  text-align: right !important;
+  position: relative;
+  right: -11em;
 }
 .card .actions i {
   width: max-content;
