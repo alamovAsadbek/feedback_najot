@@ -39,6 +39,12 @@
   padding: 0;
   font-weight: bold;
   margin-left: 5px;
+  transition: 0.5s;
+  color: #ff7500 !important;
+}
+.card .actions i:hover {
+  color: #e86e0c;
+  transform: rotate(22deg);
 }
 
 .img-avatar {

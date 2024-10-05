@@ -52,6 +52,13 @@ $main-yell-rgb-016: #e86e0c !default;
     padding: 0;
     font-weight: bold;
     margin-left: 5px;
+    transition: 0.5s;
+    color: $main-yell-rgb-015 !important;
+  }
+
+  i:hover {
+    color: $main-yell-rgb-016;
+    transform: rotate(22deg);
   }
 }
 
