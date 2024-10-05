@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         signInBtn.classList.remove('active');
     });
 
-    const form = document.querySelector('form');
+    const form = document.querySelector('forms');
     form.addEventListener('submit', function (event) {
         event.preventDefault();
         alert('Form submitted!');
