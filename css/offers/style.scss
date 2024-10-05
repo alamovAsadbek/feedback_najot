@@ -10,257 +10,100 @@ $main-blue: #0076bd !default;
 $main-blue-rgb-015: rgba(0, 118, 189, 0.1) !default;
 
 /* This pen */
-body {
-  background: #f3f5f7;
-}
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 
-.light {
-  margin-top: 6em;
-}
-
-#pageHeaderTitle {
-  margin: 2rem 0;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 2.5rem;
-}
-
-/* Cards */
-.postcard {
-  flex-wrap: wrap;
+.card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+  max-width: 400px;
   display: flex;
-  width: 100%;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
-  border-radius: 10px;
-  margin: 0 0 2rem 0;
-  overflow: hidden;
+  flex-direction: row;
   position: relative;
-  color: #ffffff;
-
-  &.dark {
-    background-color: #18151f;
-  }
-
-  &.light {
-    background-color: #e1e5ea;
-  }
-
-  .t-dark {
-    color: #18151f;
-  }
-
-  a {
-    color: inherit !important;
-  }
-
-  h1, .h1 {
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    line-height: 1.2;
-  }
-
-  .small {
-    font-size: 12px;
-
-    time i {
-      margin: 0 10px;
-      font-size: 15px;
-    }
-  }
-
-  .postcard__title {
-    font-size: 1.75rem !important;
-  }
-
-  .postcard__bar {
-    width: 50px;
-    height: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    background-color: #424242;
-    transition: width 0.2s ease;
-  }
-
-  .postcard__text {
-    padding: 1.5rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .postcard__preview-txt {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: justify;
-    height: 100%;
-  }
-
-  .postcard__tagbox {
-    display: flex;
-    flex-flow: row wrap;
-    font-size: 12px;
-    margin: 20px 0 0 0;
-    padding: 0;
-    justify-content: end !important;
-    text-align: end;
-
-    .tag__item {
-      display: inline-block;
-      font-size: 13px;
-      padding: 2.5px 0;
-      margin: 0 5px;
-      cursor: default;
-      user-select: none;
-      transition: background-color 0.3s;
-
-      i {
-        margin-right: 10px;
-      }
-    }
-  }
-
-
-  &:hover .postcard__bar {
-    width: 100px;
-  }
 }
 
-@media screen and (min-width: 769px) {
-  .postcard {
-    flex-wrap: inherit;
-
-    .postcard__title {
-      font-size: 2rem;
-    }
-
-    .postcard__tagbox {
-      justify-content: start;
-    }
-
-    .postcard__img {
-      max-width: 300px;
-      max-height: 100%;
-      transition: transform 0.3s ease;
-    }
-
-    .postcard__text {
-      padding: 3rem;
-      width: 100%;
-    }
-
-    .media.postcard__text:before {
-      content: "";
-      position: absolute;
-      display: block;
-      background: #18151f;
-      top: -20%;
-      height: 130%;
-      width: 55px;
-    }
-
-    &:hover .postcard__img {
-      transform: scale(1.1);
-    }
-
-    &:nth-child(2n+1) {
-      flex-direction: row;
-    }
-
-    &:nth-child(2n+0) {
-      flex-direction: row-reverse;
-    }
-
-    &:nth-child(2n+1) .postcard__text::before {
-      left: -12px !important;
-      transform: rotate(4deg);
-    }
-
-    &:nth-child(2n+0) .postcard__text::before {
-      right: -12px !important;
-      transform: rotate(-4deg);
-    }
-  }
+.card h2 {
+  margin: 0;
+  padding: 0 1rem;
 }
 
-@media screen and (min-width: 1024px) {
-  .postcard__text {
-    padding: 2rem 3.5rem;
-  }
-
-  .postcard__text:before {
-    content: "";
-    position: absolute;
-    display: block;
-
-    top: -20%;
-    height: 130%;
-    width: 55px;
-  }
-
-  .postcard.dark {
-    .postcard__text:before {
-      background: #18151f;
-    }
-  }
-  .postcard.light {
-    .postcard__text:before {
-      background: #e1e5ea;
-    }
-  }
+.card .title {
+  padding: 1rem;
+  text-align: right;
+  color: green;
+  font-weight: bold;
+  font-size: 12px;
 }
 
-/* COLORS */
-.postcard .postcard__tagbox .green.play:hover {
-  background: $main-green;
-  color: black;
+.card .desc {
+  padding: 0.5rem 1rem;
+  font-size: 12px;
 }
 
-.green .postcard__title:hover {
-  color: $main-green;
+.card .actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0.5rem 1rem;
 }
 
-.green .postcard__bar {
-  background-color: $main-green;
+.card svg {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
 }
 
-
-.postcard .postcard__tagbox .blue.play:hover {
-  background: $main-blue;
+.img-avatar {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid white;
+  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  top: 15px;
+  left: 85px;
 }
 
-.blue .postcard__title:hover {
-  color: $main-blue;
+.card-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
-.blue .postcard__bar {
-  background-color: $main-blue;
+.title-total {
+  padding: 2.5em 1.5em 1.5em 1.5em;
 }
 
-.postcard .postcard__tagbox .red.play:hover {
-  background: $main-red;
+path {
+  fill: white;
 }
 
-.red .postcard__title:hover {
-  color: $main-red;
+.img-portada {
+  width: 100%;
 }
 
-.red .postcard__bar {
-  background-color: $main-red;
+.portada {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-image: url("https://m.media-amazon.com/images/S/aplus-media/vc/cab6b08a-dd8f-4534-b845-e33489e91240._CR75,0,300,300_PT0_SX300__.jpg");
+  background-position: bottom center;
+  background-size: cover;
 }
 
-.postcard .postcard__tagbox .yellow.play:hover {
-  background: $main-yellow;
-  color: black;
+.card button {
+  border: none;
+  background: none;
+  font-size: 24px;
+  color: #8bc34a;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-.yellow .postcard__title:hover {
-  color: $main-yellow;
+.card button:hover {
+  color: #4caf50;
+  transform: rotate(22deg);
 }
-
-.yellow .postcard__bar {
-  background-color: $main-yellow;
-}
-
 
 //navbar
 .navbar {
