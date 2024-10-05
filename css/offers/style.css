@@ -96,9 +96,9 @@ path {
 #button-container .active {
   background-color: #ff7500 !important;
   border: none;
+  color: white !important;
   font-size: 18px;
   cursor: pointer;
-  transition: 0.5s;
 }
 
 .navbar {

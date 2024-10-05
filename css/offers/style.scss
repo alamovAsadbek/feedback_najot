@@ -109,9 +109,9 @@ path {
 #button-container .active {
   background-color: $main-yell-rgb-015 !important;
   border: none;
+  color: white !important;
   font-size: 18px;
   cursor: pointer;
-  transition: 0.5s;
 }
 
 // end card styles
