@@ -18,7 +18,7 @@
 .card .title {
   padding: 1rem;
   text-align: right;
-  color: green;
+  color: #e86e0c !important;
   font-weight: bold;
   font-size: 12px;
 }

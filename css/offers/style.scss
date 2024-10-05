@@ -31,7 +31,7 @@ $main-yell-rgb-016: #e86e0c !default;
 .card .title {
   padding: 1rem;
   text-align: right;
-  color: green;
+  color: $main-yell-rgb-016 !important;
   font-weight: bold;
   font-size: 12px;
 }
