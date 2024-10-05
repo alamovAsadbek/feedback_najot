@@ -89,7 +89,7 @@ path {
     background-size: cover;
 }
 
-button {
+.card button {
     border: none;
     background: none;
     font-size: 24px;
@@ -98,7 +98,7 @@ button {
     transition: 0.5s;
 }
 
-button:hover {
+.card button:hover {
     color: #4caf50;
     transform: rotate(22deg);
 }
