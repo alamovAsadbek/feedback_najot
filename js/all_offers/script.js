@@ -20,6 +20,10 @@ function renderCards() {
         for (let i = startIndex; i < endIndex && i < offerCards.length; i++) {
             offerCards[i].style.display = 'block';
         }
+    } else if (currentData === 'my-offers') {
+        for (let i = startIndex; i < endIndex && i < demandCards.length; i++) {
+            demandCards[i].style.display = 'block';
+        }
     } else {
         for (let i = startIndex; i < endIndex && i < demandCards.length; i++) {
             demandCards[i].style.display = 'block';
