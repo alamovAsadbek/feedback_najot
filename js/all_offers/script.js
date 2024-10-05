@@ -22,7 +22,7 @@ function renderCards() {
         }
     } else if (currentData === 'my-offers') {
         for (let i = startIndex; i < endIndex && i < demandCards.length; i++) {
-            demandCards[i].style.display = 'block';
+            myOfferCards[i].style.display = 'block';
         }
     } else {
         for (let i = startIndex; i < endIndex && i < demandCards.length; i++) {
