@@ -5,10 +5,12 @@ let currentData = 'offers';
 function renderCards() {
     const offerCards = document.querySelectorAll('.offer');
     const demandCards = document.querySelectorAll('.demand');
+    const myOfferCards = document.querySelectorAll('.my-offers');
 
     // Barcha kartalarni yashirish
     offerCards.forEach(card => card.style.display = 'none');
     demandCards.forEach(card => card.style.display = 'none');
+    myOfferCards.forEach(card => card.style.display = 'none');
 
     // Hozirgi sahifada ko'rsatish
     let startIndex = (currentPage - 1) * cardsPerPage;
