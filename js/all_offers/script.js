@@ -68,35 +68,35 @@ const cardsPerPage = 3;
 let currentPage = 1;
 let currentData = offers;
 
-function renderCards() {
-    const cardContainer = document.getElementById('card-container');
-    cardContainer.innerHTML = '';
-
-    const startIndex = (currentPage - 1) * cardsPerPage;
-    const endIndex = startIndex + cardsPerPage;
-    const currentCards = currentData.slice(startIndex, endIndex);
-
-    currentCards.forEach(card => {
-        const cardElement = document.createElement('div');
-        cardElement.className = 'col-md-4';
-        cardElement.innerHTML = `
-            <div class="card">
-                <img src="${card.image}" class="card-img-top" alt="${card.title}">
-                <div class="card-body">
-                    <h5 class="card-title">${card.title}</h5>
-                    <p class="card-text">${card.description}</p>
-                </div>
-            </div>
-        `;
-        cardContainer.appendChild(cardElement);
-    });
-
-    document.getElementById('prev').disabled = currentPage === 1;
-    document.getElementById('next').disabled = endIndex >= currentData.length;
-
-    const pageInfo = document.getElementById('page-info');
-    pageInfo.textContent = `Sahifa: ${currentPage}, Ekranda: ${currentCards.length} ta karta`;
-}
+// function renderCards() {
+//     const cardContainer = document.getElementById('card-container');
+//     cardContainer.innerHTML = '';
+//
+//     const startIndex = (currentPage - 1) * cardsPerPage;
+//     const endIndex = startIndex + cardsPerPage;
+//     const currentCards = currentData.slice(startIndex, endIndex);
+//
+//     currentCards.forEach(card => {
+//         const cardElement = document.createElement('div');
+//         cardElement.className = 'col-md-4';
+//         cardElement.innerHTML = `
+//             <div class="card">
+//                 <img src="${card.image}" class="card-img-top" alt="${card.title}">
+//                 <div class="card-body">
+//                     <h5 class="card-title">${card.title}</h5>
+//                     <p class="card-text">${card.description}</p>
+//                 </div>
+//             </div>
+//         `;
+//         cardContainer.appendChild(cardElement);
+//     });
+//
+//     document.getElementById('prev').disabled = currentPage === 1;
+//     document.getElementById('next').disabled = endIndex >= currentData.length;
+//
+//     const pageInfo = document.getElementById('page-info');
+//     pageInfo.textContent = `Sahifa: ${currentPage}, Ekranda: ${currentCards.length} ta karta`;
+// }
 
 function updateButtonState(activeButtonId) {
     const buttons = document.querySelectorAll('#button-container button');
