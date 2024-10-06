@@ -15,7 +15,7 @@ body {
     box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
 }
 
-.card *{
+.card * {
     font-size: 0.875rem;
 }
 
@@ -57,12 +57,20 @@ body {
     border-bottom-color: #e86e0c;
 }
 
-.btn{
+.btn {
     color: #fff;
     background-color: #ff7500;
     border-color: #ff7500;
     border-radius: 0.35rem;
+    font-size: 0.79rem;
 }
+
+.btn:hover {
+    color: #fff;
+    background-color: #e86e0c;
+    border-color: #e86e0c;
+}
+
 .nav-borders .nav-link {
     color: #69707a;
     border-bottom-width: 0.125rem;
