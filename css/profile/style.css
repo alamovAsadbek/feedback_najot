@@ -57,6 +57,12 @@ body {
     border-bottom-color: #e86e0c;
 }
 
+.btn{
+    color: #fff;
+    background-color: #ff7500;
+    border-color: #ff7500;
+    border-radius: 0.35rem;
+}
 .nav-borders .nav-link {
     color: #69707a;
     border-bottom-width: 0.125rem;
