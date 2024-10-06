@@ -57,7 +57,7 @@ body {
     border-bottom-color: #e86e0c;
 }
 
-.btn {
+.card .btn {
     color: #fff;
     background-color: #ff7500;
     border-color: #ff7500;
@@ -65,7 +65,7 @@ body {
     font-size: 0.79rem;
 }
 
-.btn:hover {
+.card .btn:hover {
     color: #fff;
     background-color: #e86e0c;
     border-color: #e86e0c;
