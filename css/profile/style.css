@@ -53,8 +53,8 @@ body {
 }
 
 .nav-borders .nav-link.active {
-    color: #0061f2;
-    border-bottom-color: #0061f2;
+    color: #ff7500;
+    border-bottom-color: #e86e0c;
 }
 
 .nav-borders .nav-link {
