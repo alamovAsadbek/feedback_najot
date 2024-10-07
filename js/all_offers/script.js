@@ -37,7 +37,7 @@ function renderCards() {
     }
 
     document.getElementById('prev').disabled = currentPage === 1;
-    document.getElementById('next').disabled = (currentData === 'offers' && endIndex >= offerCards.length) || (currentData === 'demands' && endIndex >= demandCards.length) || (currentData === 'my-offers' && endIndex >= demandCards.length);
+    document.getElementById('next').disabled = (currentData === 'offers' && endIndex >= offerCards.length) || (currentData === 'demands' && endIndex >= demandCards.length) || (currentData === 'my-offers' && endIndex >= demandCards.length) || (currentData === 'my-written-offers' && endIndex >= demandCards.length);
 
     const pageInfo = document.getElementById('page-info');
     pageInfo.textContent = `Page: ${currentPage},  Displaying: ${currentData === 'offers' ? offerCards.length : demandCards.length}`;
