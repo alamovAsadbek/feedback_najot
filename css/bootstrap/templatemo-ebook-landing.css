@@ -1119,3 +1119,15 @@ strong {
     display: inline-block;
     padding-left: 20px;
 }
+
+/* Language Switcher */
+.language-select {
+    margin-top: 5px;
+    font-size: 16px !important;
+    background-color: #595959;
+    color: #fff;
+}
+
+.language-select option {
+    font-size: 16px !important;
+}
