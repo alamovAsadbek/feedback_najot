@@ -112,6 +112,11 @@ path {
   cursor: pointer;
 }
 
+#button-container .input-group {
+  width: 25rem;
+  margin-top: 50px;
+}
+
 #pagination {
   text-align: end !important;
 }
