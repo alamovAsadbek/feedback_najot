@@ -96,19 +96,13 @@ path {
 #button-container {
   width: 100%;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   text-align: end !important;
 }
 
 #button-container select {
   font-size: 14px !important;
-  cursor: pointer;
-}
-
-#button-container .active {
-  background-color: #ff7500 !important;
-  border: none;
-  color: white !important;
-  font-size: 18px;
   cursor: pointer;
 }
 
@@ -164,15 +158,6 @@ path {
 .copyright-menu li {
   display: inline-block;
   padding-left: 20px;
-}
-
-#data-selector {
-  position: relative;
-  right: 3em;
-  font-weight: 600;
-  margin-top: 20px;
-  width: 250px;
-  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
