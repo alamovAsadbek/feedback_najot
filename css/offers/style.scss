@@ -111,6 +111,7 @@ path {
 
 #button-container {
   width: 100%;
+  display: flex;
   text-align: end !important;
 }
 
@@ -188,8 +189,8 @@ path {
 
 // select category styles
 #data-selector {
-  position: absolute;
-  right: 10em;
+  position: relative;
+  right: 3em;
   font-weight: 600;
   margin-top: 20px;
   width: 250px;
