@@ -74,11 +74,11 @@ document.getElementById('show-my-offers').addEventListener('click', () => {
     updateButtonState('show-my-offers');
 });
 
-document.getElementById('my-written-offers').addEventListener('click', () => {
+document.getElementById('my-written-offer').addEventListener('click', () => {
     currentData = 'my-written-offers';
     currentPage = 1;
     renderCards();
-    updateButtonState('my-written-offers');
+    updateButtonState('my-written-offer');
 });
 
 function updateButtonState(activeButtonId) {
