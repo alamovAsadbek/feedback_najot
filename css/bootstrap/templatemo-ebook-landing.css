@@ -1125,8 +1125,12 @@ strong {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    text-align: center;
-    background-image: none;
+    background-image: url(https://www.blueheavendivers.com/BHD/wp-content/uploads/2016/02/BHD-icon-language-white.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-right: 10px;
+    padding-left: 30px;
     margin-top: 12px;
     font-weight: 600;
     background-color: #606060;
