@@ -27,12 +27,12 @@ function renderCards() {
             myOfferCards[i].style.display = 'block';
         }
     } else if (currentData === 'my-written-offers') {
-        for (let i = startIndex; i < endIndex && i < demandCards.length; i++) {
-            demandCards[i].style.display = 'block';
-        }
-    } else {
         for (let i = startIndex; i < endIndex && i < myWrittenOffers.length; i++) {
             myWrittenOffers[i].style.display = 'block';
+        }
+    } else {
+        for (let i = startIndex; i < endIndex && i < demandCards.length; i++) {
+            demandCards[i].style.display = 'block';
         }
     }
 
