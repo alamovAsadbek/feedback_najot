@@ -8,16 +8,17 @@ function renderCards() {
     const myOfferCards = document.querySelectorAll('.my-offers');
     const myWrittenOffers = document.querySelectorAll('.my-written-offers');
 
-    // Barcha kartalarni yashirish
+    // Hide all cards
     offerCards.forEach(card => card.style.display = 'none');
     demandCards.forEach(card => card.style.display = 'none');
     myOfferCards.forEach(card => card.style.display = 'none');
     myWrittenOffers.forEach(card => card.style.display = 'none');
 
-    // Hozirgi sahifada ko'rsatish
+    // Calculate indices
     let startIndex = (currentPage - 1) * cardsPerPage;
     let endIndex = startIndex + cardsPerPage;
 
+    // Show cards based on the current data type
     if (currentData === 'offers') {
         for (let i = startIndex; i < endIndex && i < offerCards.length; i++) {
             offerCards[i].style.display = 'block';
@@ -36,11 +37,16 @@ function renderCards() {
         }
     }
 
+    // Update button states
     document.getElementById('prev').disabled = currentPage === 1;
-    document.getElementById('next').disabled = (currentData === 'offers' && endIndex >= offerCards.length) || (currentData === 'demands' && endIndex >= demandCards.length) || (currentData === 'my-offers' && endIndex >= myOfferCards.length) || (currentData === 'my-written-offers' && endIndex >= myWrittenOffers.length);
+    document.getElementById('next').disabled = (currentData === 'offers' && endIndex >= offerCards.length) ||
+        (currentData === 'demands' && endIndex >= demandCards.length) ||
+        (currentData === 'my-offers' && endIndex >= myOfferCards.length) ||
+        (currentData === 'my-written-offers' && endIndex >= myWrittenOffers.length);
 
+    // Update page info
     const pageInfo = document.getElementById('page-info');
-    pageInfo.textContent = `Page: ${currentPage},  Displaying: ${currentData === 'offers' ? offerCards.length : demandCards.length}`;
+    pageInfo.textContent = `Page: ${currentPage}, Displaying: ${currentData}`;
 }
 
 document.getElementById('prev').addEventListener('click', () => {
@@ -53,47 +59,11 @@ document.getElementById('next').addEventListener('click', () => {
     renderCards();
 });
 
-document.getElementById('show-offers').addEventListener('click', () => {
-    currentData = 'offers';
+document.getElementById('data-selector').addEventListener('change', (event) => {
+    currentData = event.target.value;
     currentPage = 1;
     renderCards();
-    updateButtonState('show-offers');
 });
 
-document.getElementById('show-demands').addEventListener('click', () => {
-    currentData = 'demands';
-    currentPage = 1;
-    renderCards();
-    updateButtonState('show-demands');
-});
-
-document.getElementById('show-my-offers').addEventListener('click', () => {
-    currentData = 'my-offers';
-    currentPage = 1;
-    renderCards();
-    updateButtonState('show-my-offers');
-});
-
-document.getElementById('my-written-offer').addEventListener('click', () => {
-    currentData = 'my-written-offers';
-    currentPage = 1;
-    renderCards();
-    updateButtonState('my-written-offer');
-});
-
-function updateButtonState(activeButtonId) {
-    const buttons = document.querySelectorAll('#button-container button');
-    buttons.forEach(button => {
-        if (button.id === activeButtonId) {
-            button.classList.add('active');
-            button.classList.remove('btn-custom-secondary');
-        } else {
-            button.classList.remove('active');
-            button.classList.add('btn-custom-secondary');
-        }
-    });
-}
-
-// Dastlabki kartalarni ko'rsatish
+// Initial render
 renderCards();
-updateButtonState('show-offers'); // Dastlab takliflar aktiv
