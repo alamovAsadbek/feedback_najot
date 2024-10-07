@@ -6,11 +6,13 @@ function renderCards() {
     const offerCards = document.querySelectorAll('.offer');
     const demandCards = document.querySelectorAll('.demand');
     const myOfferCards = document.querySelectorAll('.my-offers');
+    const myWrittenOffers = document.querySelectorAll('.my-written-offers');
 
     // Barcha kartalarni yashirish
     offerCards.forEach(card => card.style.display = 'none');
     demandCards.forEach(card => card.style.display = 'none');
     myOfferCards.forEach(card => card.style.display = 'none');
+    myWrittenOffers.forEach(card => card.style.display = 'none');
 
     // Hozirgi sahifada ko'rsatish
     let startIndex = (currentPage - 1) * cardsPerPage;
@@ -24,9 +26,13 @@ function renderCards() {
         for (let i = startIndex; i < endIndex && i < myOfferCards.length; i++) {
             myOfferCards[i].style.display = 'block';
         }
-    } else {
+    } else if (currentData === 'my-written-offers') {
         for (let i = startIndex; i < endIndex && i < demandCards.length; i++) {
             demandCards[i].style.display = 'block';
+        }
+    } else {
+        for (let i = startIndex; i < endIndex && i < myWrittenOffers.length; i++) {
+            myWrittenOffers[i].style.display = 'block';
         }
     }
 
@@ -66,6 +72,13 @@ document.getElementById('show-my-offers').addEventListener('click', () => {
     currentPage = 1;
     renderCards();
     updateButtonState('show-my-offers');
+});
+
+document.getElementById('my-written-offers').addEventListener('click', () => {
+    currentData = 'my-written-offers';
+    currentPage = 1;
+    renderCards();
+    updateButtonState('my-written-offers');
 });
 
 function updateButtonState(activeButtonId) {
