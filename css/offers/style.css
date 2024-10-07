@@ -161,6 +161,10 @@ path {
 }
 
 #data-selector {
+  position: absolute;
+  right: 10em;
+  font-weight: 600;
+  margin-top: 20px;
   width: 250px;
   font-size: 14px;
 }
