@@ -1119,25 +1119,3 @@ strong {
     display: inline-block;
     padding-left: 20px;
 }
-
-/* select language */
-
-.language-select {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 5px;
-    border-radius: 4px;
-    width: auto;
-}
-
-.language-option {
-    display: flex;
-    align-items: center;
-}
-
-.language-option img {
-    width: 20px;
-    height: 15px;
-    margin-right: 5px;
-}
