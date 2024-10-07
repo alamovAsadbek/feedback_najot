@@ -49,7 +49,7 @@ function renderCards() {
 
     // Update page info
     const pageInfo = document.getElementById('page-info');
-    pageInfo.textContent = `Page: ${currentPage}, Displaying: ${totalCards} ${currentData.replace('-', ' ')}`;
+    pageInfo.textContent = `Page: ${currentPage}, Displaying: ${totalCards}`;
 }
 
 document.getElementById('prev').addEventListener('click', () => {
