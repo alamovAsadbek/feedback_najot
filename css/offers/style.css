@@ -113,6 +113,10 @@ path {
   margin-top: 25px;
 }
 
+#button-container .input-group input {
+  margin-right: 10px;
+}
+
 #pagination {
   text-align: end !important;
 }
