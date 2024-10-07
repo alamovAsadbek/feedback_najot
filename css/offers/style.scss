@@ -117,19 +117,19 @@ path {
   text-align: end !important;
 }
 
-#button-container select {
-  margin-top: 25px;
+#button-container .select-category select {
   font-size: 14px !important;
   cursor: pointer;
 }
 
 #button-container .input-group {
-  width: 25rem;
+  width: auto;
   margin-top: 25px;
 }
 
 #button-container .input-group form {
   display: flex;
+  justify-content: flex-end;
   align-items: end;
   margin: 0;
 }
