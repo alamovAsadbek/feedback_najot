@@ -102,7 +102,6 @@ path {
 }
 
 #button-container .select-category select {
-  padding-right: 10px !important;
   cursor: pointer;
 }
 
