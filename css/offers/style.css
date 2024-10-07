@@ -160,4 +160,9 @@ path {
   padding-left: 20px;
 }
 
+#select-category {
+  width: 250px;
+  font-size: 14px;
+}
+
 /*# sourceMappingURL=style.css.map */
