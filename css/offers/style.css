@@ -97,14 +97,12 @@ path {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: end;
   text-align: end !important;
 }
 
 #button-container select {
   margin-top: 25px;
-  margin-left: 15px;
-  margin-right: 25px;
   font-size: 14px !important;
   cursor: pointer;
 }
