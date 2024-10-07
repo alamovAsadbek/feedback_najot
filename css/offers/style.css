@@ -98,8 +98,10 @@ path {
   text-align: end !important;
 }
 
-#button-container button {
+#button-container select {
   font-size: 16px !important;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 #button-container .active {
@@ -160,7 +162,7 @@ path {
 }
 
 #select-category {
-  width: 7em;
+  width: 8em;
 }
 
 /*# sourceMappingURL=style.css.map */
