@@ -104,14 +104,6 @@ path {
   font-weight: bold;
 }
 
-#button-container .active {
-  background-color: #ff7500 !important;
-  border: none;
-  color: white !important;
-  font-size: 18px;
-  cursor: pointer;
-}
-
 #pagination {
   text-align: end !important;
 }
