@@ -98,7 +98,7 @@ path {
   text-align: end !important;
 }
 
-#button-container button {
+#button-container select {
   font-size: 14px !important;
   cursor: pointer;
 }
