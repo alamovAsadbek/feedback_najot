@@ -111,15 +111,23 @@ path {
 
 #button-container {
   width: 100%;
-  justify-content: flex-end;
   text-align: end !important;
 }
 
-#button-container select {
+#button-container button {
   font-size: 16px !important;
   cursor: pointer;
   font-weight: bold;
 }
+
+#button-container .active {
+  background-color: $main-yell-rgb-015 !important;
+  border: none;
+  color: white !important;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 
 // card paginator styles
 
@@ -177,8 +185,4 @@ path {
 .copyright-menu li {
   display: inline-block;
   padding-left: 20px;
-}
-
-#select-category {
-  width: 8em;
 }
